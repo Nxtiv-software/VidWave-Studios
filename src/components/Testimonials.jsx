@@ -7,17 +7,17 @@ const images = [
   {
     id: 1,
     img: GDG,
-    height: "10"
+    height: "5"
   },
   {
     id: 2,
     img: IIT,
-    height: "20"
+    height: "10"
   },
   {
     id: 3,
     img: Jetwing,
-    height: "20"
+    height: "15"
   },
   {
     id: 4,
