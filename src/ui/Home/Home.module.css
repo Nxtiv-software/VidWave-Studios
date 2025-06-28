@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  min-height: 120vh;
+  background-color: #0d0d0d; /* Base dark */
+
+  background-image:
+    /* Darken left and right sides */ 
+    linear-gradient(
+      to right, 
+      #000000 0%,
+      transparent 30%,
+      transparent 70%,
+      #000000 100%
+    ),
+    radial-gradient(circle at top right, rgba(87, 34, 156, 0.3), transparent 60%),
+    /* GLOW CENTER */
+      radial-gradient(
+        ellipse at center,
+        #150a27 0%,
+        #0b0316 30%,
+        transparent 70%
+      ),
+    /* TOP LIGHT FADE */
+      linear-gradient(
+        to top,
+        /* #030303 0%,
+      #100421 50%, */ transparent 100%
+      );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: screen;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 4rem;
+  color: #cccccc;
+  text-align: center;
+  line-height: 4.5rem;
+}
