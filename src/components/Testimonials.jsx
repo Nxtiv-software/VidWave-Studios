@@ -7,32 +7,32 @@ const images = [
   {
     id: 1,
     img: GDG,
-    height: 10
+    height: 2
 
   },
   {
     id: 2,
     img: IIT,
-    height: 10
+    height: 3
   },
   {
     id: 3,
     img: Jetwing,
-    height: 15
+    height: 4
   },
   {
     id: 4,
     img: Kernells,
-    height: 20
+    height: 5
   },
 ];
 
 function Testimonials() {
   return (
-    <div className="h-[50vh] flex flex-col justify-center items-center text-white font-extralight">
+    <div className="h-[50vh] flex flex-col justify-center items-center text-white font-extralight pb-50">
       <p>Some of our trusted clients</p>
       <div className="flex gap-20 items-center mt-20">
-      {images.map((image) => <img class={`h-${image.height}`} src={image.img}/>)}
+      {images.map((image) => <img key={image.id} style={{ height: `${image.height}rem` }} src={image.img}/>)}
       </div>
     </div>
   );
