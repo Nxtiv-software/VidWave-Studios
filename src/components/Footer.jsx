@@ -8,7 +8,7 @@ function Footer() {
     <div className="h-[50vh] w-[80vw] mx-auto gap-10 py-20">
       <div>
         <p className="text-[#808490] text-sm">Contact vidwave at:</p>
-        <p className="text-lg text-white">productionsvidwave@gmail.com</p>
+        <p className="text-lg text-white">hello@vidwavestudios.com</p>
       </div>
       <div className="flex flex-col items-center justify-center">
         <img className="h-20" src={logo} alt="" />
