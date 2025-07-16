@@ -11,12 +11,14 @@ function NavBar() {
         <img className="h-12" src={logo} alt="" />
         <ul className="flex gap-6 items-center text-sm">
           <NavLink to="/">Home </NavLink>
-          <li>Services  </li>
+          <li>Services </li>
           <NavLink to="/portfolio">Portfolio </NavLink>
-          <li>About Us </li>
+          <NavLink to="/Team">About Us </NavLink>
           <li>Call Us </li>
         </ul>
-        <button className="bg-white px-5 py-1 rounded-sm font-semibold text-black">Login</button>
+        <button className="bg-white px-5 py-1 rounded-sm font-semibold text-black">
+          Login
+        </button>
       </div>
     </nav>
   );
