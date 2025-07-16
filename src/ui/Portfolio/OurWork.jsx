@@ -6,10 +6,11 @@ import img5 from "../../../public/i-5.png"
 import img6 from "../../../public/i-6.png"
 import img7 from "../../../public/i-7.png"
 import img8 from "../../../public/i-8.png"
+import Section4 from "./Section4"
 
 function OurWork() {
   return (
-    <div class="grid grid-cols-4 grid-rows-10 gap-4 p-20 h-[1500px]">
+    <div class="grid grid-cols-4 grid-rows-4 gap-4 pr-20 pl-20 ">
   <div class="col-span-2 row-span-2 bg-blue-500 rounded-xl text-white flex items-center justify-center overflow-hidden">
   <img src={img1} alt="" class="w-full h-full object-cover"/>
   </div>
@@ -41,6 +42,8 @@ function OurWork() {
   <div class="col-span-2 row-span-2 bg-cyan-600 rounded-xl text-white flex items-center justify-center overflow-hidden">
     <img src={img6} alt="" class="w-full h-full object-cover"/>
   </div>
+
+  
 </div>
   );
 }
