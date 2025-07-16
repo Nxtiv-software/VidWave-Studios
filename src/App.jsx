@@ -1,18 +1,18 @@
-import Footer from "./components/Footer"
-import Testimonials from "./components/Testimonials"
-import Home from "./ui/Home/Home"
-import Stories from "./ui/Home/Stories"
+import { BrowserRouter, Routes, Route } from "react-router";
+import MainPage from "./MainPage";
+import Portfolio from "./Portfolio";
 
 function App() {
-
   return (
     <>
-    <Home/>
-    <Stories/>
-    <Testimonials/>
-    <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />}></Route>
+          <Route path="portfolio" element={<Portfolio />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
