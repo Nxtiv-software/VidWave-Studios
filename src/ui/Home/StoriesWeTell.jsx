@@ -11,7 +11,7 @@ function StoriesWeTell() {
       <h3 className="mb-10 text-4xl text-white">Stories We Tell</h3>
       <div className="h-[50vh] flex gap-20 items-center">
         {images.map((img) => (
-          <img className="h-60 w-60 object-cover" src={img.img} />
+          <img className="h-60 w-60 object-cover rounded-lg" src={img.img} />
         ))}
       </div>
     </div>
