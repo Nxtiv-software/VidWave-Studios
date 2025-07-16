@@ -1,0 +1,195 @@
+.teamSection {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at center, #1a0d2e 0%, #0f0f23 35%, #16213e 70%, #0f1419 100%);
+    padding: 60px 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .title {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin-bottom: 80px;
+    letter-spacing: -0.02em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .teamGrid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .memberCard {
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .memberCard:hover {
+    transform: translateY(-8px);
+  }
+  
+  .imageContainer {
+    position: relative;
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+  
+  .memberImage {
+    width: 240px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .memberCard:hover .memberImage {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .memberName {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .memberRole {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.02em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .joinButton {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 18px 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px);
+    letter-spacing: 0.01em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .joinButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .characterIllustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 450px;
+    height: 600px;
+    z-index: 1;
+    opacity: 0.9;
+  }
+  
+  .characterImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0 0 0;
+    opacity: 0.8;
+    filter: hue-rotate(200deg) saturate(1.2) brightness(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .teamGrid {
+      gap: 60px;
+    }
+    
+    .characterIllustration {
+      width: 350px;
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .teamGrid {
+      gap: 50px;
+    }
+    
+    .memberImage {
+      width: 200px;
+      height: 280px;
+    }
+    
+    .characterIllustration {
+      width: 300px;
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .teamSection {
+      padding: 40px 20px;
+    }
+    
+    .title {
+      font-size: 3.5rem;
+      margin-bottom: 60px;
+    }
+    
+    .teamGrid {
+      gap: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .memberImage {
+      width: 180px;
+      height: 250px;
+    }
+    
+    .characterIllustration {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2.8rem;
+    }
+    
+    .memberImage {
+      width: 160px;
+      height: 220px;
+    }
+    
+    .joinButton {
+      padding: 16px 40px;
+      font-size: 1.1rem;
+    }
+  }
