@@ -1,14 +1,9 @@
 import React from "react";
 import styles from "./Team.module.css";
 
-interface TeamMember {
-  id: number;
-  name: string;
-  role: string;
-  image: string;
-}
 
-const teamMembers: TeamMember[] = [
+
+const teamMembers = [
   {
     id: 1,
     name: "Vihan Mendis",
@@ -35,7 +30,7 @@ const teamMembers: TeamMember[] = [
   },
 ];
 
-const Team: React.FC = () => {
+function  Team ()  {
   return (
     <section className={styles.teamSection}>
       <div className={styles.container}>
