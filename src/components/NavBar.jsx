@@ -13,7 +13,7 @@ function NavBar() {
           <NavLink to="/">Home </NavLink>
           <li>Services </li>
           <NavLink to="/portfolio">Portfolio </NavLink>
-          <NavLink to="/Team">About Us </NavLink>
+          <NavLink to="/aboutus">About Us </NavLink>
           <li>Call Us </li>
         </ul>
         <button className="bg-white px-5 py-1 rounded-sm font-semibold text-black">
