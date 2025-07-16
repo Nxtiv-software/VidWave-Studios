@@ -60,13 +60,13 @@ const Team: React.FC = () => {
         <button className={styles.joinButton}>Join our team!!</button>
       </div>
 
-      <div className={styles.characterIllustration}>
+      {/* <div className={styles.characterIllustration}>
         <img
           src="/images/team/character.jpg"
           alt="Team character"
           className={styles.characterImage}
         />
-      </div>
+      </div> */}
     </section>
   );
 };
