@@ -165,7 +165,7 @@
   color: rgba(255, 255, 255, 0.6);
   font-weight: 600;
   font-size: 1.1rem;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .clientLogo:hover {
@@ -396,7 +396,7 @@
 
 .featureCard {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -548,7 +548,7 @@
 .logoTrack {
   display: flex;
   gap: 4rem;
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .logoTrack:hover {
@@ -589,7 +589,7 @@
   max-height: 80px;
   object-fit: contain;
   filter: grayscale(100%) brightness(0.7);
-  transition: filter 0.3s ease;
+  transition: filter 0.1s ease;
 }
 
 .trustedLogo:hover img {

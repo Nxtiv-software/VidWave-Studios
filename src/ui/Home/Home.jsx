@@ -26,6 +26,7 @@ import Testimonaial from "../../../public/tehan.jpg";
 import Testimonaial2 from "../../../public/dinakshi.jpg";
 import Testimonaial3 from "../../../public/vihangi.jpg";
 
+import video1 from "../../../public/ads.mp4";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -160,7 +161,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className={styles.problemCard}>
+          {/* <div className={styles.problemCard}>
             <div className={styles.problemIcon}>
               <DollarSign className={styles.icon} />
             </div>
@@ -169,7 +170,7 @@ const Home = () => {
               Great videographers and editors are expensive. Who can afford
               A-players to create and maintain high-quality video content?
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -206,7 +207,10 @@ const Home = () => {
                   <div className={styles.mockupSection}>
                     <h4>Premium Brand Stories</h4>
                     <p>Cinematic Quality</p>
-                    <div className={styles.mockupButton}>Watch Demo</div>
+                    <button className={styles.mockupButton} onClick={video1}>
+                      Watch Demo
+                    </button>
+                    {/* <div className={styles.mockupButton}>Watch Demo</div> */}
                   </div>
                 </div>
               </div>
@@ -239,7 +243,7 @@ const Home = () => {
             Why Choose Our Video Production Service?
           </h2>
           <div className={styles.featuresGrid}>
-            <div className={styles.featureCard}>
+            {/* <div className={styles.featureCard}>
               <div className={styles.featureIcon}>
                 <Play className={styles.icon} />
               </div>
@@ -248,7 +252,7 @@ const Home = () => {
                 We'll keep refining your videos until they're perfect. No extra
                 charges, no limits.
               </p>
-            </div>
+            </div> */}
 
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>

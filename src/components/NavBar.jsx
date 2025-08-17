@@ -25,8 +25,8 @@ function NavBar() {
             <a href="/Portfolio" className={styles.navLink}>
               Portfolio
             </a>
-            <a href="/Call Us" className={styles.navLink}>
-              Call Us
+            <a href="/aboutus" className={styles.navLink}>
+              About Us
             </a>
             {/* <a href="#resource" className={styles.navLink}>
               Resource
@@ -38,7 +38,7 @@ function NavBar() {
               href="mailto:hello@vidwavestudios.com"
               className={styles.emailBtn}
             >
-              hello@vidwavestudios.com
+              Reach Us
             </a>
           </div>
         </div>
