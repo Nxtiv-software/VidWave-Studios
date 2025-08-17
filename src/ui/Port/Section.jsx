@@ -14,6 +14,11 @@ import styles from "../Port/Portfolio.module.css";
 import img1 from "../../../public/i-6.png";
 import img2 from "../../../public/s-4.png";
 import img3 from "../../../public/s-5.png";
+import img4 from "../../../public/Browns-1.jpg";
+import img5 from "../../../public/JetwingSus-1.png";
+import img6 from "../../../public/i-4.png"; // Example image, replace with actual images
+import img7 from "../../../public/i-9.jpg";
+import img8 from "../../../public/i-10.jpg";
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -30,6 +35,7 @@ const Portfolio = () => {
     "Music",
     "Event",
     "Commercial",
+    "Podcast",
   ];
 
   const videos = [
@@ -47,14 +53,13 @@ const Portfolio = () => {
     },
     {
       id: "2",
-      title: "Cutting Edge 25 - Testimonials",
+      title: "Jetwing Hotels - Solar Power Initiative",
       category: "Corporate",
-      thumbnail: img2,
-      youtubeId: "dQw4w9WgXcQ",
-      description:
-        "Client testimonials showcasing the impact of innovative business solutions.",
-      duration: "2:30",
-      views: "8.2K",
+      thumbnail: img5,
+      youtubeId: "YbB5GMy-VUk?si=lfBmhutDD0nbM4Y-",
+      description: "Jetwing Hotels Increased Reliance on Solar Power",
+      duration: "3:04",
+      views: "2.84K",
       likes: 189,
     },
     {
@@ -62,7 +67,7 @@ const Portfolio = () => {
       title: "Celebrating Women's Day",
       category: "Documentary",
       thumbnail: img3,
-      youtubeId: "dQw4w9WgXcQ",
+      youtubeId: "3cZRmQL-DH0?si=hXBcIb87WavYWqOB",
       description:
         "A documentary celebrating the achievements and stories of inspiring women.",
       duration: "5:12",
@@ -71,34 +76,43 @@ const Portfolio = () => {
     },
     {
       id: "4",
-      title: "BYD - EV Motor Show '24",
-      category: "Commercial",
-      thumbnail:
-        "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800",
-      youtubeId: "dQw4w9WgXcQ",
-      description:
-        "Showcasing the latest electric vehicle innovations at the 2024 motor show.",
+      title: "All Ears - Podcast Series by Browns Hotels & Resorts",
+      category: "Podcast",
+      thumbnail: img4,
+      youtubeId: "MJ9XSk-JqHU?si=95flwUnrAyi6cxzt",
+      description: "Meet Sri Lanka’s Elephant Experts: All Ears Episode 001",
       duration: "4:18",
       views: "22.1K",
       likes: 456,
     },
     {
       id: "5",
-      title: "BYD - EV Motor Show '24",
-      category: "Commercial",
-      thumbnail:
-        "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800",
-      youtubeId: "dQw4w9WgXcQ",
+      title: "Highlights - DevFest Sri Lanka 2024",
+      category: "Event",
+      thumbnail: img6,
+      youtubeId: "EHo5baedp3g?si=vPbqJFQzMLkGjTSw",
       description:
-        "Extended coverage of electric vehicle technology and sustainable transportation.",
-      duration: "6:25",
+        "That's a wrap! GDG DevFest Sri Lanka 2024 was an unforgettable celebration of tech, innovation, and community!",
+      duration: "1:47",
       views: "18.9K",
       likes: 398,
     },
     {
       id: "6",
-      title: "BYD - EV Motor Show '24",
+      title: "Spa Ceylon Homeware",
       category: "Commercial",
+      thumbnail: img7,
+      youtubeId: "hMW8p5GSXYU?si=TzGETJNxT0JH8jBw",
+      description:
+        "Spa Ceylon Homeware, Where Luxury meets homeware.Ft Saranga & Dinakshi",
+      duration: "8:24",
+      views: "9.8K",
+      likes: 267,
+    },
+    {
+      id: "7",
+      title: "BYD - EV Motor Show '24",
+      category: "Podcast",
       thumbnail:
         "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800",
       youtubeId: "dQw4w9WgXcQ",
@@ -107,18 +121,32 @@ const Portfolio = () => {
       views: "9.8K",
       likes: 267,
     },
+    {
+      id: "8",
+      title: "Spa Ceylon එක්ක එකතු වුණු අපේ පුංචි අමුත්තිය!",
+      category: "Podcast",
+      thumbnail: img8,
+      youtubeId: "dQw4w9WgXcQ",
+      description: "Spa Ceylon Good Living Channel",
+      duration: "13:12",
+      views: "21K",
+      likes: 267,
+    },
+    {
+      id: "9",
+      title: "BYD - EV Motor Show '24",
+      category: "Commercial",
+      thumbnail:
+        "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800",
+      youtubeId: "dQw4w9WgXcQ",
+      description: "Spa Ceylon Good Living Channel",
+      duration: "13:12",
+      views: "9.8K",
+      likes: 267,
+    },
   ];
 
-  const collageImages = [
-    "https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
-    "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
-  ];
+  const collageImages = [];
 
   const filteredVideos =
     activeCategory === "All"
