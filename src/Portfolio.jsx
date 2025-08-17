@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import Section from "./ui/Port/Section";
+import Section from "./ui/Port/Portfolio";
 
 function Portfolio() {
   return (

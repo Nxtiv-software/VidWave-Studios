@@ -13,6 +13,16 @@ import {
 } from "lucide-react";
 import styles from "./Home.module.css";
 
+import logo1 from "../../../public/logos/Jetwing.png";
+import logo2 from "../../../public/logos/Kernells.png";
+import logo3 from "../../../public/logos/hotchocolate.png";
+import logo4 from "../../../public/logos/IIT.png";
+import logo5 from "../../../public/logos/GDG.png";
+import logo6 from "../../../public/logos/brownsHotels.png";
+import logo7 from "../../../public/logos/co-labs.png";
+import logo8 from "../../../public/logos/Trace.png";
+import logo9 from "../../../public/logos/AtomSports.png";
+
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -20,7 +30,7 @@ const Home = () => {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <p className={styles.subtitle}>VIDEO PRODUCTION AS A SERVICE</p>
+            {/* <p className={styles.subtitle}>VIDEO PRODUCTION AS A SERVICE</p> */}
             <h1 className={styles.heroTitle}>
               Make your audience fall in love
               <br />
@@ -62,9 +72,7 @@ const Home = () => {
               </div>
               <div className={styles.testimonialText}>
                 <div className={styles.rating}>★★★★★</div>
-                <p>
-                  Trusted by amazing brands like <strong>TechCorp Inc</strong>
-                </p>
+                <p>Trusted by amazing brands</p>
               </div>
             </div>
           </div>
@@ -318,52 +326,28 @@ const Home = () => {
           <div className={styles.logoStrip}>
             <div className={styles.logoTrack}>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Google"
-                />
+                <img src={logo1} alt="Google" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Microsoft"
-                />
+                <img src={logo2} alt="Microsoft" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Amazon"
-                />
+                <img src={logo3} alt="Amazon" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Apple"
-                />
+                <img src={logo4} alt="Apple" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Meta"
-                />
+                <img src={logo5} alt="Meta" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Uber"
-                />
+                <img src={logo6} alt="Uber" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Netflix"
-                />
+                <img src={logo7} alt="Netflix" />
               </div>
               <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Adobe"
-                />
+                <img src={logo8} alt="Adobe" />
               </div>
               {/* Duplicate logos for seamless loop */}
               <div className={styles.trustedLogo}>
