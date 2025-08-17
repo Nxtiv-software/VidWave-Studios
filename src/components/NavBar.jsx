@@ -10,23 +10,22 @@ function NavBar() {
       <nav className={styles.nav}>
         <div className={styles.navContent}>
           <div className={styles.logo}>
-            <img src={logo} alt="VidWave Logo" className={styles.logoImg} />
+            <a href="/" className={styles.navLink}>
+              <img src={logo} alt="VidWave Logo" className={styles.logoImg} />
+            </a>
             <div className={styles.logoIcon}>
               {/* <div className={styles.logoShape}></div> */}
             </div>
           </div>
 
           <div className={styles.navLinks}>
-            {/* <navLink to="/portfolio" className={styles.navLink}>
-              Portfolio
-            </navLink> */}
-            <a href="#work" className={styles.navLink}>
+            {/* <a href=/aboutus" className={styles.navLink}>
               About Us
-            </a>
-            <a href="#Portfolio" className={styles.navLink}>
+            </a> */}
+            <a href="/Portfolio" className={styles.navLink}>
               Portfolio
             </a>
-            <a href="#Call Us" className={styles.navLink}>
+            <a href="/Call Us" className={styles.navLink}>
               Call Us
             </a>
             {/* <a href="#resource" className={styles.navLink}>

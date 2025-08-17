@@ -22,6 +22,9 @@ import logo6 from "../../../public/logos/brownsHotels.png";
 import logo7 from "../../../public/logos/co-labs.png";
 import logo8 from "../../../public/logos/Trace.png";
 import logo9 from "../../../public/logos/AtomSports.png";
+import Testimonaial from "../../../public/tehan.jpg";
+import Testimonaial2 from "../../../public/dinakshi.jpg";
+import Testimonaial3 from "../../../public/vihangi.jpg";
 
 const Home = () => {
   return (
@@ -47,7 +50,8 @@ const Home = () => {
             <div className={styles.heroButtons}>
               <button className={styles.primaryBtn}>Start Project</button>
               <button className={styles.secondaryBtn}>
-                Schedule a Call
+                <a href="#portfolio"> See Our Portfolio</a>
+
                 <ArrowRight size={16} />
               </button>
             </div>
@@ -80,13 +84,53 @@ const Home = () => {
       </section>
 
       {/* Client Logos */}
-      <section className={styles.clientLogos}>
+      {/* <section className={styles.clientLogos}>
         <div className={styles.logoGrid}>
           <div className={styles.clientLogo}>Netflix</div>
           <div className={styles.clientLogo}>Adobe</div>
           <div className={styles.clientLogo}>TESLA</div>
           <div className={styles.clientLogo}>NIKE</div>
           <div className={styles.clientLogo}>Spotify</div>
+        </div>
+      </section> */}
+
+      {/* Trusted Clients Section */}
+      <section className={styles.trustedClientsSection}>
+        <div className={styles.trustedClientsContent}>
+          <h2 className={styles.trustedClientsTitle}>
+            Serving the Industry’s Finest
+          </h2>
+          <div className={styles.logoStrip}>
+            <div className={styles.logoTrack}>
+              <div className={styles.trustedLogo}>
+                <img src={logo1} alt="Google" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo2} alt="Microsoft" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo3} alt="Amazon" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo4} alt="Apple" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo5} alt="Meta" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo6} alt="Uber" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo7} alt="Netflix" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo8} alt="Adobe" />
+              </div>
+              <div className={styles.trustedLogo}>
+                <img src={logo9} alt="Adobe" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -244,19 +288,21 @@ const Home = () => {
                 <Star className={styles.starIcon} />
               </div>
               <p className={styles.testimonialText}>
-                "The video quality exceeded our expectations. Our brand video
-                increased engagement by 300% within the first month."
+                "Performing on stage is one thing, but seeing it through
+                Vidwave’s lens is another level. They brought out the raw energy
+                of my live show and turned it into a music video that fans keep
+                replaying."
               </p>
               <div className={styles.testimonialAuthor}>
                 <img
-                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=60&h=60"
-                  alt="Sarah Johnson"
+                  src={Testimonaial}
+                  alt="tehan perera"
                   className={styles.authorAvatar}
                 />
                 <div>
-                  <div className={styles.authorName}>Sarah Johnson</div>
+                  <div className={styles.authorName}>Tehan Perera</div>
                   <div className={styles.authorTitle}>
-                    Marketing Director, TechCorp
+                    Singer, Hot Chocolate Band
                   </div>
                 </div>
               </div>
@@ -271,18 +317,21 @@ const Home = () => {
                 <Star className={styles.starIcon} />
               </div>
               <p className={styles.testimonialText}>
-                "Professional, creative, and always on time. They transformed
-                our product launch with stunning visuals."
+                "Vidwave captured the essence of my performance perfectly. Their
+                team understands storytelling through visuals and made every
+                scene come alive. I felt supported, creative, and confident
+                throughout the shoot — the final video truly brought my
+                character to life."
               </p>
               <div className={styles.testimonialAuthor}>
                 <img
-                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=60&h=60"
-                  alt="Michael Chen"
+                  src={Testimonaial2}
+                  alt="Dinakshi Priyasad"
                   className={styles.authorAvatar}
                 />
                 <div>
-                  <div className={styles.authorName}>Michael Chen</div>
-                  <div className={styles.authorTitle}>CEO, StartupXYZ</div>
+                  <div className={styles.authorName}>Dinakshi Priyasad</div>
+                  <div className={styles.authorTitle}>Actress</div>
                 </div>
               </div>
             </div>
@@ -296,107 +345,23 @@ const Home = () => {
                 <Star className={styles.starIcon} />
               </div>
               <p className={styles.testimonialText}>
-                "Best investment we made for our marketing. The subscription
-                model makes budgeting so much easier."
+                Professional, punctual, and highly creative — Vidwave exceeded
+                expectations. From concept to delivery, they kept everything
+                smooth and stress-free. Our corporate video is now the
+                centerpiece of our presentations."
               </p>
               <div className={styles.testimonialAuthor}>
                 <img
-                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=60&h=60"
+                  src={Testimonaial3}
                   alt="Emily Rodriguez"
                   className={styles.authorAvatar}
                 />
                 <div>
-                  <div className={styles.authorName}>Emily Rodriguez</div>
+                  <div className={styles.authorName}>Vihangi Weerasinghe</div>
                   <div className={styles.authorTitle}>
-                    Brand Manager, Fashion Co
+                    Marketing Manager, Browns Hotels & Resorts
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trusted Clients Section */}
-      <section className={styles.trustedClientsSection}>
-        <div className={styles.trustedClientsContent}>
-          <h2 className={styles.trustedClientsTitle}>
-            Trusted by Industry Leaders
-          </h2>
-          <div className={styles.logoStrip}>
-            <div className={styles.logoTrack}>
-              <div className={styles.trustedLogo}>
-                <img src={logo1} alt="Google" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo2} alt="Microsoft" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo3} alt="Amazon" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo4} alt="Apple" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo5} alt="Meta" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo6} alt="Uber" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo7} alt="Netflix" />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img src={logo8} alt="Adobe" />
-              </div>
-              {/* Duplicate logos for seamless loop */}
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Google"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Microsoft"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Amazon"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Apple"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Meta"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Uber"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Netflix"
-                />
-              </div>
-              <div className={styles.trustedLogo}>
-                <img
-                  src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=140&h=70"
-                  alt="Adobe"
-                />
               </div>
             </div>
           </div>
@@ -423,7 +388,7 @@ const Home = () => {
                 <div>
                   <div className={styles.contactLabel}>Email Us</div>
                   <div className={styles.contactValue}>
-                    hello@videoproduction.com
+                    hello@vidwavestudios.com
                   </div>
                 </div>
               </div>
@@ -434,7 +399,7 @@ const Home = () => {
                 </div>
                 <div>
                   <div className={styles.contactLabel}>Call Us</div>
-                  <div className={styles.contactValue}>+1 (555) 123-4567</div>
+                  <div className={styles.contactValue}>+94 71 768 4195</div>
                 </div>
               </div>
 
@@ -444,9 +409,7 @@ const Home = () => {
                 </div>
                 <div>
                   <div className={styles.contactLabel}>Visit Us</div>
-                  <div className={styles.contactValue}>
-                    123 Creative Street, LA, CA 90210
-                  </div>
+                  <div className={styles.contactValue}>Colombo, Sri Lanka</div>
                 </div>
               </div>
             </div>
@@ -490,6 +453,7 @@ const Home = () => {
                   <option>Social Media Content</option>
                   <option>Commercial</option>
                   <option>Documentary</option>
+                  <option>Podcast</option>
                   <option>Other</option>
                 </select>
               </div>
@@ -504,6 +468,7 @@ const Home = () => {
               </div>
 
               <button type="submit" className={styles.formSubmit}>
+                <a href="mailto:hello@vidwavestudios.com"></a>
                 Send Message
                 <ArrowRight size={16} />
               </button>
