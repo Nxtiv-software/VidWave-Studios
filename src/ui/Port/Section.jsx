@@ -12,6 +12,10 @@ import {
 // import styles from "./Portfolio.module.css";
 import styles from "../Port/Portfolio.module.css"; // Adjust the path as necessary
 
+import img1 from "../../../public/i-6.png";
+import img2 from "../../../public/s-4.png";
+import img3 from "../../../public/s-5.png";
+
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -34,7 +38,7 @@ const Portfolio = () => {
       id: "1",
       title: "University of Westminster - Graduation",
       category: "Event",
-      thumbnail: "https://www.pexels.com/photo/33479471/",
+      thumbnail: img1,
       youtubeId: "dHhqb2RK8X4",
       description:
         "Capturing the joy and achievement of graduation day at the University of Westminster, UK.",
@@ -46,8 +50,7 @@ const Portfolio = () => {
       id: "2",
       title: "Cutting Edge 25 - Testimonials",
       category: "Corporate",
-      thumbnail:
-        "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+      thumbnail: img2,
       youtubeId: "dQw4w9WgXcQ",
       description:
         "Client testimonials showcasing the impact of innovative business solutions.",
@@ -59,8 +62,7 @@ const Portfolio = () => {
       id: "3",
       title: "Celebrating Women's Day",
       category: "Documentary",
-      thumbnail:
-        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      thumbnail: img3,
       youtubeId: "dQw4w9WgXcQ",
       description:
         "A documentary celebrating the achievements and stories of inspiring women.",

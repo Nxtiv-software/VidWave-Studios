@@ -3,12 +3,8 @@ import styles from "./Home.module.css";
 import NavBar from "../../components/NavBar";
 
 function Home() {
-  
-
-
   return (
     <div className={styles.background}>
-        
       <div className="min-h-screen flex flex-col justify-center items-center">
         <p className={styles.title}>
           Your Vision,{" "}
