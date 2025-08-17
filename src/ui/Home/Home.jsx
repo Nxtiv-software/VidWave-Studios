@@ -12,10 +12,6 @@ import {
   Play,
 } from "lucide-react";
 import styles from "./Home.module.css";
-<<<<<<< HEAD
-
-=======
->>>>>>> fd906f5 (change the home page design)
 
 const Home = () => {
   return (
