@@ -1,6 +1,6 @@
 import Button from "../../components/Button";
 import styles from "./Home.module.css";
-import NavBar from "../../components/NavBar";
+
 
 function Home() {
   return (

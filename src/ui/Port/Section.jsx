@@ -9,8 +9,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-// import styles from "./Portfolio.module.css";
-import styles from "../Port/Portfolio.module.css"; // Adjust the path as necessary
+import styles from "../Port/Portfolio.module.css"; 
 
 import img1 from "../../../public/i-6.png";
 import img2 from "../../../public/s-4.png";
@@ -172,6 +171,7 @@ const Portfolio = () => {
         navigator.clipboard.writeText(
           `https://youtube.com/watch?v=${video.youtubeId}`
         );
+        throw new Error(error);
       }
     } else {
       navigator.clipboard.writeText(
