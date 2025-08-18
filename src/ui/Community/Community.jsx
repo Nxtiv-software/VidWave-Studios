@@ -208,15 +208,22 @@ const Community = () => {
                 <MessageCircle size={32} color="#6366f1" />
                 <div className={styles.iconGlow}></div>
               </div>
-              <h3>Discord Community</h3>
+              <h3>WhatsApp Community</h3>
               <p>
                 Join our active Discord server for real-time collaboration,
                 feedback, and networking with industry professionals.
               </p>
-              <button className={`${styles.joinBtn} ${styles.discordBtn}`}>
-                <span>Join Discord</span>
-                <div className={styles.buttonRipple}></div>
-              </button>
+              {/* <button className={`${styles.joinBtn} ${styles.discordBtn}`}> */}
+              <a
+                href="https://wa.me/message/F57FQASLHONHH1"
+                className={`${styles.joinBtn} ${styles.discordBtn}`}
+              >
+                Join Community
+              </a>
+              <div className={styles.buttonRipple}></div>
+              {/* <span>Join Community</span> */}
+
+              {/* </button> */}
               <div className={styles.memberAvatars}>
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div
