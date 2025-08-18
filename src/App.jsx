@@ -10,9 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-          <Route path="portfolio" element={<Portfolio />}></Route>
-          <Route path="aboutus" element={<Team />}></Route>
-          <Route path="community" element={<CreativeWave />}></Route>
+          <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="/aboutus" element={<Team />}></Route>
+          <Route path="/community" element={<CreativeWave />}></Route>
           <Route path="/project-start" element={<ProjectStart />}></Route>
         </Routes>
       </BrowserRouter>
