@@ -28,6 +28,9 @@ function NavBar() {
             <a href="/aboutus" className={styles.navLink}>
               About Us
             </a>
+            <a href="/community" className={styles.navLink}>
+              Community
+            </a>
             {/* <a href="#resource" className={styles.navLink}>
               Resource
             </a> */}
@@ -35,7 +38,7 @@ function NavBar() {
 
           <div className={styles.contactEmail}>
             <a
-              href="mailto:hello@vidwavestudios.com"
+              href="https://wa.me/message/F57FQASLHONHH1"
               className={styles.emailBtn}
             >
               Reach Us

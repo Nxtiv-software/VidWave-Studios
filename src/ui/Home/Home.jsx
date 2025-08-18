@@ -28,6 +28,11 @@ import Testimonaial3 from "../../../public/vihangi.jpg";
 
 import video1 from "../../../public/ads.mp4";
 const Home = () => {
+  const handleStartProject = () => {
+    // This would typically use React Router or similar for navigation
+    window.location.href = "/project-start";
+  };
+
   return (
     <div className={styles.container}>
       {/* Hero Section */}
@@ -49,32 +54,25 @@ const Home = () => {
             </p>
 
             <div className={styles.heroButtons}>
-              <button className={styles.primaryBtn}>Start Project</button>
-              <button className={styles.secondaryBtn}>
-                <a href="#portfolio"> See Our Portfolio</a>
-
-                <ArrowRight size={16} />
+              <button
+                className={styles.primaryBtn}
+                onClick={handleStartProject}
+              >
+                Start Project
               </button>
+
+              <a href="/Portfolio" className={styles.secondaryBtn}>
+                See Our Portfolio
+                <ArrowRight size={16} />
+              </a>
             </div>
 
             <div className={styles.testimonial}>
-              <div className={styles.avatars}>
-                <img
-                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=40&h=40"
-                  alt="Avatar 1"
-                  className={styles.avatar}
-                />
-                <img
-                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=40&h=40"
-                  alt="Avatar 2"
-                  className={styles.avatar}
-                />
-                <img
-                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40"
-                  alt="Avatar 3"
-                  className={styles.avatar}
-                />
-              </div>
+              {/* <div className={styles.avatars}>
+                <img src={logo1} alt="Avatar 1" className={styles.avatar} />
+                <img src={logo3} alt="Avatar 2" className={styles.avatar} />
+                <img src={logo1} alt="Avatar 3" className={styles.avatar} />
+              </div> */}
               <div className={styles.testimonialText}>
                 <div className={styles.rating}>★★★★★</div>
                 <p>Trusted by amazing brands</p>
